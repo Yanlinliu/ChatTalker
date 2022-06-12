@@ -1,0 +1,123 @@
+
+
+.container
+  max-width: 1088px
+  border: 1px red solid
+  margin: 0 auto
+
+  padding: 0 20px
+
+
+.platforms-container, .roles-container, .abilities-container, .reviews-container
+  margin-bottom: 100px
+
+.roles-container
+
+  h3, .role-text
+    text-align: center
+    margin-bottom: 16px
+
+  h3
+    font-size: 32px
+    font-weight: bolder
+    color: #221E1F
+    line-height: 46px
+
+  .role-text
+    font-size: 20px
+    font-weight: bold
+    color: #221E1F
+    line-height: 29px
+
+  .roles-list
+    display: flex
+    justify-content: space-between
+
+  .role
+    width: calc(25% - 16px)
+    border-radius: 12px
+    box-shadow: 1px 2px 1px 2px rgba(34, 30, 31, 0.1)
+
+    img
+      border-radius: 12px 12px 0 0
+
+    h4, p
+      text-align: center
+      line-height: 24px
+
+    h4
+      margin: 16px 0
+      color: rgba(86, 196, 197, 1)
+      font-weight: bolder
+    p
+      padding: 0 16px
+      margin-top: 24px
+
+
+
+.footer-plan
+  //background: url("../IMG/home_footer.svg") no-repeat center/cover
+  background-image: url("../IMG/home_footer.svg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  height: 503px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .container
+
+    transform: translateY(123px)
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+    h3
+      font-size: 2rem
+      font-weight: 600
+      color: #221E1F
+      flex-basis: 100%
+      text-align: center
+      margin-bottom: 48px
+
+    a
+      display: inline-block
+
+      border: 1px solid #56C4C5
+      border-radius: 27px
+      background-color: #56C4C5
+
+      color: #ffffff
+      text-align: center
+      padding: 12px 32px
+
+
+
+.footer
+  background-color: #F5F5F5
+  text-align: center
+
+
+@media (max-width: 767px)
+  .footer-plan
+    height: 461px
+
+  .roles-container
+    .roles-list
+      flex-wrap: wrap
+      margin-top: 32px
+
+      .role
+        width: calc(50% - 16px)
+        margin-bottom: 32px
+
+
+@media (max-width: 375px)
+
+  .roles-container
+    .roles-list
+      .role
+        width: 100%
+        margin-bottom: 16px
