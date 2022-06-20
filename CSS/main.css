@@ -1,12 +1,105 @@
 .container {
   max-width: 1088px;
-  border: 1px red solid;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.platforms-container, .roles-container, .abilities-container, .reviews-container {
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  margin-bottom: 30px;
+}
+.nav .logo {
+  display: inline-block;
+}
+.nav .logo .logo-pic {
+  width: 218px;
+}
+.nav .nav-btn {
+  display: inline-block;
+  padding: 8px 32px;
+  text-decoration: none;
+  background-color: #FF5D50;
+  border-radius: 22px;
+  color: white;
+  line-height: 24px;
+}
+
+.header, .platforms-container, .roles-container, .abilities-container, .reviews-container {
   margin-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .headerContent {
+  flex-basis: 60%;
+}
+.header .headerContent h1 {
+  color: #56C4C5;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+.header .headerContent p {
+  color: #221E1F;
+  font-weight: bolder;
+  font-size: 48px;
+  line-height: 70px;
+}
+.header .headerContent h2 {
+  color: #221E1F;
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 16px;
+}
+.header .headerImg_container {
+  flex-basis: 40%;
+}
+.header .headerImg_container .header-img {
+  max-width: 100%;
+}
+
+.platforms-container h3 {
+  color: #221E1F;
+  font-weight: bolder;
+  line-height: 46px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.platforms-container .platforms {
+  display: flex;
+  justify-content: space-evenly;
+}
+.platforms-container .platforms .platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 30%;
+  max-width: 260px;
+  margin: 0 48px;
+}
+.platforms-container .platforms .platform .platform-pic {
+  max-width: 90px;
+}
+.platforms-container .platforms .platform .platform-title {
+  margin: 24px 0;
+  color: #221E1F;
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+}
+.platforms-container .platforms .platform .platform-content {
+  text-align: center;
+  line-height: 24px;
+  color: #747474;
 }
 
 .roles-container h3, .roles-container .role-text {
@@ -33,6 +126,7 @@
   width: calc(25% - 16px);
   border-radius: 12px;
   box-shadow: 1px 2px 1px 2px rgba(34, 30, 31, 0.1);
+  padding-bottom: 24px;
 }
 .roles-container .role img {
   border-radius: 12px 12px 0 0;
@@ -49,6 +143,123 @@
 .roles-container .role p {
   padding: 0 16px;
   margin-top: 24px;
+}
+
+.abilities-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.abilities-container .ability-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.abilities-container .ability-cards .ability-card {
+  max-width: 230px;
+  flex-basis: 48%;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #00000014;
+  padding: 32px;
+}
+.abilities-container .ability-cards .ability-card .ability-pic {
+  max-width: 52px;
+  box-shadow: 0 2px 10px #00000014;
+}
+.abilities-container .ability-cards .ability-card h4, .abilities-container .ability-cards .ability-card p {
+  text-align: left;
+  color: #221E1F;
+}
+.abilities-container .ability-cards .ability-card h4 {
+  font-weight: bolder;
+  line-height: 26px;
+  font-size: 18px;
+  margin: 24px 0 16px 0;
+}
+.abilities-container .ability-cards .ability-card p {
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.abilities-container .ability-content h4 {
+  color: #221E1F;
+  line-height: 46px;
+  font-size: 32px;
+  font-weight: bolder;
+}
+.abilities-container .ability-content p {
+  color: #221E1F;
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+.abilities-container .ability-content .ability-btn {
+  display: inline-block;
+  max-width: 136px;
+  background-color: #56C4C5;
+  padding: 12px 32px;
+  border-radius: 27px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.reviews-container h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bolder;
+  line-height: 46px;
+  color: #221E1F;
+  margin-bottom: 104px;
+}
+.reviews-container .reviews {
+  display: flex;
+  justify-content: space-between;
+}
+.reviews-container .reviews .review {
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  max-width: calc(33% - 16px);
+  padding: 24px 32px;
+}
+.reviews-container .reviews .review .reviewer-pic {
+  max-width: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -56px;
+  left: 32px;
+}
+.reviews-container .reviews .review .review-content {
+  padding: 24px 0;
+  border-bottom: rgba(32, 30, 2, 0.05) solid;
+}
+.reviews-container .reviews .review .review-content p {
+  line-height: 24px;
+  color: #221E1F;
+  font-weight: bold;
+}
+.reviews-container .reviews .review .reviewer-content {
+  margin: 24px 0 8px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.reviews-container .reviews .review .reviewer-content .reviewer, .reviews-container .reviews .review .reviewer-content .reviewer-title {
+  line-height: 24px;
+  color: #221E1F;
+}
+.reviews-container .reviews .review .reviewer-content .reviewer {
+  flex-basis: 100%;
+  font-weight: bolder;
+  margin-bottom: 8px;
+}
+.reviews-container .reviews .review .reviewer-content .reviewer-title {
+  font-weight: bold;
 }
 
 .footer-plan {
@@ -103,11 +314,76 @@
     width: calc(50% - 16px);
     margin-bottom: 32px;
   }
+
+  .platforms {
+    flex-wrap: wrap;
+  }
+  .platforms .platform {
+    width: 100%;
+  }
+
+  .reviews-container .reviews .review {
+    max-width: calc(50% - 16px);
+  }
+  .reviews-container .reviews .review:last-child {
+    display: none;
+  }
 }
 @media (max-width: 375px) {
+  .nav {
+    border-bottom: #f7d063 1px;
+    padding: 0 20px;
+  }
+  .nav .logo .logo-pic {
+    max-width: 130px;
+  }
+  .nav .nav-btn {
+    font-size: 24px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+  .header .headerContent {
+    flex-basis: 100%;
+  }
+  .header .headerImg_container {
+    flex-basis: 100%;
+    margin-top: 32px;
+  }
+
   .roles-container .roles-list .role {
     width: 100%;
     margin-bottom: 16px;
+  }
+
+  .abilities-container {
+    flex-direction: column-reverse;
+  }
+  .abilities-container .ability-cards {
+    justify-content: center;
+  }
+  .abilities-container .ability-cards .ability-card {
+    flex-basis: 100%;
+    margin-bottom: 24px;
+  }
+  .abilities-container .ability-content {
+    text-align: center;
+  }
+
+  .reviews-container .reviews {
+    flex-wrap: wrap;
+  }
+  .reviews-container .reviews .review {
+    max-width: 100%;
+    display: none;
+  }
+  .reviews-container .reviews .review:nth-child(1) {
+    display: block;
+  }
+
+  .platforms .platform {
+    margin-bottom: 48px;
   }
 }
 
